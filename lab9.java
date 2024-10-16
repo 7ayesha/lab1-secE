@@ -10,6 +10,8 @@ public static void main(String[] args) {
         System.out.println("Roll Number: " + failedStudent.getrollNumber ());
         System.out.println("Subject Code: " + failedStudent.getSubjectCode());
         System.out.println("Subject Name: " + failedStudent.getSubjectName());
+	System.out.println("Email: " + failedStudent.getSubjectName());
+
 
         // Mutable promoted student
         PromotedStudent promotedStudent = new PromotedStudent(89, "SE-423T", "Software Construction And Dev");
@@ -17,15 +19,21 @@ public static void main(String[] args) {
         System.out.println("Roll Number: " + promotedStudent.getRollNumber());
         System.out.println("Subject Code: " + promotedStudent.getSubjectCode());
         System.out.println("Subject Name: " + promotedStudent.getSubjectName());
+	System.out.println("Email: " + promotedStudent.getSubjectName());
+
 
         // Updating promoted student details
         promotedStudent.setSubjectCode("SE-210T");
         promotedStudent.setSubjectName("Discrete Mathematics");
+	promotedStudent.setSubjectName("Programming Fundamentals");
+
 
         System.out.println("\nUpdated Promoted Student Details:");
         System.out.println("Roll Number: " + promotedStudent.getRollNumber());
         System.out.println("Subject Code: " + promotedStudent.getSubjectCode());
         System.out.println("Subject Name: " + promotedStudent.getSubjectName());
+	System.out.println("Email: " + promotedStudent.getSubjectName());
+
     }
 		
 
